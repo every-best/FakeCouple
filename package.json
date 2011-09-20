@@ -1,0 +1,9 @@
+{
+  "name": "chat-example",
+  "version": "0.0.1",
+  "dependencies": {
+    "express": "2.2.0",
+    "websocket-server":"1.4.04",
+    "jade" : "0.5.7"
+  }
+} 

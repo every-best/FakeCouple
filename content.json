@@ -1,0 +1,24 @@
+{ "index": {
+        "title": "test,test",
+        "chatrooms": [
+            {
+                "name": "tech topic ",
+                "chatid": 0001,
+                "img": "/images/index/img1.png",
+                "personNumber": 0
+            },
+            {
+                "name": "love matter ",
+                "chatid": 0002,
+                "img": "/images/index/img2.png",
+                "personNumber": 0
+            },
+            {
+                "name": "whatever",
+                "chatid": 0003,
+                "img": "/images/index/img3.png",
+                "personNumber": 0
+            }
+        ]
+    }
+}

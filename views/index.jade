@@ -1,0 +1,42 @@
+div#channel_container(style="display:none;")
+	- for (var i in columns)
+		- var last=(i<columns.length-1)?'left block':'right block' 
+		div(class=last)
+			dt
+				a(href=columns[i].href)
+					img(src=columns[i].img,width='276',height='164',alt=columns[i].title)
+			dd
+				a(href='columns[i].href')
+					span=columns[i].title
+				p=columns[i].desc
+div.container
+	div.main-container.left
+		div.chatroom
+			textarea#chatroom keren.ann welcome!
+		div.talk-content
+			div.person-info.left
+				div.person-img
+					img(src='/image/img1.jpeg', width='50', height='50', alt="keren.ann")
+			div.talk-area.left
+				div.person-name
+					span#person-name keren-ann
+						|  say:
+				textarea(placeholder='shift+enter send~')#talk-area
+	div.sidebar.right
+		div.title-bar
+			span#total-person 3 person online!
+		div#all-person
+			ul
+				li
+					a
+						img(src='/image/img2.jpeg',width='50',height='50',alt='Sault') 
+						span Sault
+				li
+					a
+						img(src='/image/img1.jpeg',width='50',height='50',alt='keren-ann')
+						span keren-ann
+				li
+					a
+						img(src='/image/img3.jpeg',width='50',height='50',alt='July')
+						span July
+div(style="clear:both;")

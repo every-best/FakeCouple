@@ -1,0 +1,93 @@
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,
+button,textarea,select,p,blockquote,th,td {
+	margin: 0;
+	padding: 0;
+}
+
+.left{
+	float: left;
+}
+.right{
+	float: right;
+}
+.header{
+	height:80px;
+	width:100%;
+	color: white;
+	font-size: 42px;
+	line-height: 80px;
+	background-color: black;
+}
+#footer{
+	clear: both;
+	height: 50px;
+	line-height: 50px;
+	padding-left: 10px;
+	background-color: #e5e5e5;
+}
+#send-button{
+	height:68px;
+	width:10%;
+	background-color: red;
+	cursor: pointer;
+
+}
+.person-info{
+	width:8%;
+	padding: 10px 1%;
+	height:70px;
+	cursor: text;
+}
+.container{
+	width:100%;
+}
+.main-container{
+	width: 80%;
+	border-right: 1px solid black;
+	border-bottom: 1px solid black;
+}
+.sidebar{
+	width:20%;
+}
+.title-bar{
+	background-color: #979797;	
+}
+li,li a,li a span{
+	height: 50px;
+	padding-left: 10px;
+	padding-top: 10px;
+	list-style: none;
+}
+li a span{
+	line-height: 50px;
+}
+.chatroom{
+	width:100%;
+	background-color: black;
+}
+#chatroom{
+	width:99%;
+	height:600px;
+	padding-top: 1%;
+	padding-left: 1%;
+}
+#talk-area{
+	width: 99%;
+	height:50px;	
+}
+.person-name{
+	height:20px;
+	line-height: 20px;
+	font-size: 14px;
+}
+.talk-area{
+	width: 90%;
+	height:70px;
+}
+.title-bar{
+	padding-left: 5px;
+	color: #fff;
+}
+.person-img img{
+	margin: 10px 10px;
+}	

@@ -1,0 +1,6 @@
+{
+	"/":{
+		"template":"login",
+		"data":"login"
+	}
+}
