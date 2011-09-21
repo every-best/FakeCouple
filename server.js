@@ -8,7 +8,7 @@ var offical = require('./app.js');
 
 var site_vhosts=[],vhosts;
 
-/**// Virtual Hosts
+/** Virtual Hosts
 site_vhosts.push(express.vhost('chat.com',offical));
 site_vhosts.push(express.vhost('www.chat.com',offical));
 
