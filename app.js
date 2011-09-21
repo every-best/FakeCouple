@@ -21,7 +21,7 @@ app.configure(function(){
 	app.use(app.router);
 });
 //开发模式？？
-app.configure("development",function(){
+app.configure("development",function(){ 
 	app.use(express.errorHandler({dumpException:true,showStack:true}));
 	console.log("Warning:Server in Development Mode,add NODE_ENV=production",true);
 });
