@@ -6,8 +6,6 @@ var app=module.exports=express.createServer();
 var fs=require("fs");
 var __dirname=".";
 
-
-
 app.configure(function(){
 	app.set("view",__dirname+"/views");
 	app.set("view engine","jade");
