@@ -55,7 +55,8 @@ app.get("/*",function(req,res){
 
 try{
     //这里的监听和之前的是？Express Server和Http Server
-	app.listen(54966);
+    var port=process.env.PORT || 3000;
+	app.listen(port);
 	console.log("Express server listening on port 54966");
 }catch(e){
 	console.log("Error:"+e.message,1);
