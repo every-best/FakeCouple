@@ -6,6 +6,8 @@ var app=module.exports=express.createServer();
 var fs=require("fs");
 var __dirname=".";
 
+
+
 app.configure(function(){
 	app.set("view",__dirname+"/views");
 	app.set("view engine","jade");
@@ -23,12 +25,12 @@ app.configure(function(){
 //开发模式？？
 app.configure("development",function(){
 	app.use(express.errorHandler({dumpException:true,showStack:true}));
-	log("Warning:Server in Development Mode,add NODE_ENV=production",true);
+	console.log("Warning:Server in Development Mode,add NODE_ENV=production",true);
 });
 //产品模式？？
 app.configure("production",function(){
 	app.use(express.errorHandler());
-	log("Production Mode");
+	console.log("Production Mode");
 });
 
 var info=JSON.parse(fs.readFileSync("content.json","utf-8"));
@@ -56,7 +58,7 @@ app.get("/*",function(req,res){
 try{
     //这里的监听和之前的是？Express Server和Http Server
 	app.listen(3000);
-	log("Express server listening on port 3000");
+	console.log("Express server listening on port 3000");
 }catch(e){
-	log("Error:"+e.message,1);
+	console.log("Error:"+e.message,1);
 }
