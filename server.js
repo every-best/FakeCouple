@@ -43,5 +43,6 @@ console.log("Express router Listening on port 80");*/
  	server.broadcast("<"+conn.id+"> disconnected");
  });
  
- server.listen(8000);
+ var port=process.env.PORT || 8000;
+ server.listen(port);
  console.log("websocket-server Listening on port 8000");
